@@ -6,13 +6,11 @@ import { useEffect } from "react";
 import images from "@/assets/images";
 import { navigation } from "@/constants/navigation";
 import { banner } from "@/constants/banner";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const ArrowPrev = ({ currentSlide, slideCount, onClick }: any) => {
   return (
     <div
-      className="slider-arrow-left absolute top-[50%] translate-y-[-50%] left-[46px] items-center justify-center cursor-pointer z-10 w-[48px] h-[48px] rounded-full bg-[hsla(0,0%,100%,.1)] border border-[hsla(0,0%,100%,.1)]"
+      className="slider-arrow-left absolute top-[50%] translate-y-[-50%] left-[46px] items-center justify-center cursor-pointer z-9 w-[48px] h-[48px] rounded-full bg-[hsla(0,0%,100%,.1)] border border-[hsla(0,0%,100%,.1)]"
       onClick={onClick}
     >
       <Image src={images.ArrowLeftImage} className="w-[24px] h-[24px]" alt="" />
@@ -23,7 +21,7 @@ const ArrowPrev = ({ currentSlide, slideCount, onClick }: any) => {
 const ArrowNext = ({ currentSlide, slideCount, onClick }: any) => {
   return (
     <div
-      className="slider-arrow-right absolute top-[50%] translate-y-[-50%] right-[46px] items-center justify-center cursor-pointer z-10 w-[48px] h-[48px] rounded-full bg-[hsla(0,0%,100%,.1)] border border-[hsla(0,0%,100%,.1)]"
+      className="slider-arrow-right absolute top-[50%] translate-y-[-50%] right-[46px] items-center justify-center cursor-pointer z-9 w-[48px] h-[48px] rounded-full bg-[hsla(0,0%,100%,.1)] border border-[hsla(0,0%,100%,.1)]"
       onClick={onClick}
     >
       <Image
