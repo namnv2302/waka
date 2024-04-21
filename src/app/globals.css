@@ -56,6 +56,10 @@ body {
 }
 
 /*  */
+.see-more-modal {
+  z-index: 11 !important;
+}
+
 .slider-bottom-overlay {
   background: linear-gradient(180deg, rgba(18, 18, 20, 0), #121214) !important;
 }
@@ -70,6 +74,7 @@ body {
   display: none;
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  z-index: 9;
 }
 
 .slider-arrow-left:hover,
@@ -112,6 +117,7 @@ body {
   display: none;
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  z-index: 9;
 }
 
 .book-item-arrow-left {

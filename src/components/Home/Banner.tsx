@@ -167,7 +167,7 @@ function Banner() {
           />
         ))}
       </Slider>
-      <div className="h-[120px] absolute bottom-0 left-0 w-full z-10 slider-bottom-overlay"></div>
+      <div className="h-[120px] absolute bottom-0 left-0 w-full z-9 slider-bottom-overlay"></div>
     </div>
   );
 }
