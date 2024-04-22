@@ -6,9 +6,9 @@ interface CarouselProps {
 const Carousel: React.FC<CarouselProps> = ({ title, children }) => {
   return (
     <div className="bg-background container-block">
-      <p className="font-medium text-[26px] leading-[33px] text-white-50">
+      <h2 className="font-medium text-[26px] leading-[33px] text-white-50">
         {title}
-      </p>
+      </h2>
       <div className="mt-5">{children}</div>
     </div>
   );

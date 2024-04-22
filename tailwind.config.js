@@ -9,6 +9,7 @@ module.exports = {
       second: "#F2F2F2",
       comic: "#FFCC00",
       "white-50": "rgba(242, 242, 242, 1)",
+      "black/600": "#666666",
     },
     // textColor: {
     //   "white-50": "rgba(242, 242, 242, 1)",

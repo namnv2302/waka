@@ -92,6 +92,15 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
             className="absolute top-0 right-0"
           />
         </div>
+        <div className="label-rank absolute -bottom-4 left-0 overflow-hidden">
+          {item.rank}
+        </div>
+        <div
+          className={twMerge(
+            `bg-rank-default`,
+            item.rank < 4 && `bg-rank-${item.rank}`
+          )}
+        ></div>
       </div>
       <p className="font-medium text-[16px] text-white-50 leading-[20px] hover:text-primary">
         <a href="#" className="block">
