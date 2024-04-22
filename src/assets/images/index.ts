@@ -8,6 +8,9 @@ const images = {
   ArrowLeftImage: require("@/assets/images/arrowLeft.svg").default,
   ArrowRightImage: require("@/assets/images/arrowRight.svg").default,
   BellPlusImage: require("@/assets/images/bell-plus.png"),
+  TagFreeImage: require("@/assets/images/tag-free.svg").default,
+  TagMemberImage: require("@/assets/images/tag-member.svg").default,
+  TagSaleImage: require("@/assets/images/tag-sale.svg").default,
 };
 
 export default images;

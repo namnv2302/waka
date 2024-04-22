@@ -40,10 +40,33 @@ body {
   background-color: rgba(18, 18, 20, 0.8);
 }
 
+.tag-free,
+.tag-member {
+  border-radius: 0 12px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.15);
+}
+
+.tag-sale {
+  border-radius: 0 12px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.tag-free {
+  background: linear-gradient(270deg, #029568, #2ae1a0);
+}
+
+.tag-member {
+  background: linear-gradient(270deg, #fb3a1a, #ebb004);
+}
+
+.tag-sale {
+  background: linear-gradient(270deg, #eb0076, #fb65cf);
+}
+
 /* Override */
 .slick-dots {
   position: absolute !important;
-  right: 30px !important;
+  right: 50px !important;
   bottom: 30px !important;
   display: inline-flex !important;
   width: unset !important;
@@ -51,8 +74,17 @@ body {
 }
 
 .slick-dots li {
-  width: 6px !important;
-  height: 6px !important;
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  color: white;
+  opacity: 0.2;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: white;
 }
 
 /*  */

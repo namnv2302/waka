@@ -1,7 +1,14 @@
-import images from "@/assets/images";
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
+import images from "@/assets/images";
 
-function BookItem({ item, index }: any) {
+interface BookItemProps {
+  item: any;
+  index: number;
+  tag?: string;
+}
+
+const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
   return (
     <div className="flex flex-col gap-3 cursor-pointer w-[82%]">
       <div className="relative w-full rounded-[12px] book-item-wrapper">
@@ -69,6 +76,22 @@ function BookItem({ item, index }: any) {
             </p>
           </div>
         </div>
+        <div
+          className={twMerge(
+            `hidden absolute top-0 right-0 h-7 w-[120px] py-1 pl-3`,
+            tag && "inline-block",
+            tag
+          )}
+        >
+          <p className="text-[16px] font-medium leading-5 text-white uppercase">
+            Hội viên
+          </p>
+          <Image
+            src={images.TagMemberImage}
+            alt=""
+            className="absolute top-0 right-0"
+          />
+        </div>
       </div>
       <p className="font-medium text-[16px] text-white-50 leading-[20px] hover:text-primary">
         <a href="#" className="block">
@@ -77,6 +100,6 @@ function BookItem({ item, index }: any) {
       </p>
     </div>
   );
-}
+};
 
 export default BookItem;
