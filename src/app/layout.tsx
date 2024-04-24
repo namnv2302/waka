@@ -7,6 +7,11 @@ import "./globals.css";
 const netflixSans = localFont({
   src: [
     {
+      path: "../assets/fonts/NetflixSans-Light.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
       path: "../assets/fonts/NetflixSans-Medium.woff2",
       weight: "500",
       style: "medium",

@@ -261,9 +261,9 @@ function Banner() {
                             className="text-[15px] font-normal text-second leading-[20px] p-[8px] rounded-xl cursor-pointer hover:text-primary hover:bg-white-overlay block w-full"
                             key={index}
                           >
-                            <a href="#" className="inline-block">
+                            <Link href="#" className="inline-block">
                               {item}
-                            </a>
+                            </Link>
                           </li>
                         );
                       })}

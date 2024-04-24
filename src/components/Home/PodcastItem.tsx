@@ -65,7 +65,7 @@ const PodcastItem: React.FC<PodcastItemProps> = ({ item, index }) => {
                 bala bala bala bala
               </p>
               <p className="font-normal text-[15px] text-primary leading-5">
-                <a href="#">Chi tiết</a>
+                <Link href="#">Chi tiết</Link>
               </p>
             </div>
           </div>

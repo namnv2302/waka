@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import images from "@/assets/images";
 
@@ -68,7 +69,7 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
               bala
             </p>
             <p className="font-normal text-[15px] text-primary leading-5">
-              <a href="#">Chi tiết</a>
+              <Link href="#">Chi tiết</Link>
             </p>
           </div>
         </div>
@@ -99,9 +100,9 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
         ></div>
       </div>
       <p className="font-medium text-[16px] text-white-50 leading-[20px] hover:text-primary transition">
-        <a href="#" className="block">
+        <Link href="#" className="block">
           {item.title}
-        </a>
+        </Link>
       </p>
     </div>
   );

@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner";
+import BuyBook from "@/components/Home/BuyBook";
 import ForYou from "@/components/Home/ForYou";
 import Newest from "@/components/Home/Newest";
 import Podcast from "@/components/Home/Podcast";
@@ -14,6 +15,7 @@ const Home = () => {
       <ForYou />
       <Ranking />
       <Podcast />
+      <BuyBook />
     </div>
   );
 };

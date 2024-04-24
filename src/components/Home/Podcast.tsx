@@ -2,9 +2,13 @@
 
 import Slider from "react-slick";
 import { v4 as uuIdV4 } from "uuid";
+import dynamic from "next/dynamic";
 import { settings } from "@/constants/settings";
-import PodcastItem from "@/components/Home/PodcastItem";
 import { podcast } from "@/constants/podcast";
+
+const PodcastItem = dynamic(() => import("@/components/Home/PodcastItem"), {
+  ssr: false,
+});
 
 const Podcast = () => {
   return (
