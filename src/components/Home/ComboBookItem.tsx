@@ -8,7 +8,7 @@ interface ComboBookItemProps {
 
 const ComboBookItem: React.FC<ComboBookItemProps> = ({ item }) => {
   return (
-    <div className="w-[84%] mt-4">
+    <div className="xl:w-56 lg:w-52 mt-4">
       <Link href={"/"} className="inline-block">
         <div className="relative rounded-xl">
           <div className="w-full rounded-xl overflow-hidden zoom-out">
