@@ -11,6 +11,7 @@ const images = {
   TagFreeImage: require("@/assets/images/tag-free.svg").default,
   TagMemberImage: require("@/assets/images/tag-member.svg").default,
   TagSaleImage: require("@/assets/images/tag-sale.svg").default,
+  MusicImage: require("@/assets/images/musicIcon.svg").default,
 };
 
 export default images;

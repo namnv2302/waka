@@ -65,7 +65,7 @@ const Ranking = () => {
           Cộng đồng viết
         </p>
       </div>
-      <div className="mt-5">
+      <div>
         <Slider {...settings} className="book-wrapper">
           {ranking.map((item, index) => (
             <BookItem

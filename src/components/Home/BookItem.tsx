@@ -20,16 +20,12 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
         <div className="book-item-overlay"></div>
         <div
           className={`book-item-modal absolute top-0 ${
-            index !== 0 && (index % 4 === 0 || index % 5 === 0)
-              ? "right-0"
-              : "left-0"
+            index !== 0 && index > 3 ? "right-0" : "left-0"
           } bottom-0 flex min-w-[732px] p-4 rounded-[12px] gap-6 border border-white-overlay z-20`}
         >
           <div
             className={`relative rounded-[12px] h-full w-[200px] ${
-              index !== 0 && (index % 4 === 0 || index % 5 === 0)
-                ? "order-1"
-                : false
+              index !== 0 && index > 3 ? "order-1" : false
             }`}
           >
             <Image
@@ -102,7 +98,7 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
           )}
         ></div>
       </div>
-      <p className="font-medium text-[16px] text-white-50 leading-[20px] hover:text-primary">
+      <p className="font-medium text-[16px] text-white-50 leading-[20px] hover:text-primary transition">
         <a href="#" className="block">
           {item.title}
         </a>

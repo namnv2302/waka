@@ -23,6 +23,10 @@ module.exports = {
       "white-overlay": "hsla(0, 0%, 100%, 0.1)",
       background: "rgba(18, 18, 20, 1)",
       primary: "#15B088",
+      "progress-overlay": "rgba(18, 18, 20, 0.6)",
+    },
+    boxShadow: {
+      "glass-box": "0px 8px 32px 0px hsla(0, 0%, 0%, 0.5)",
     },
   },
   plugins: [],

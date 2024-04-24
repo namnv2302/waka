@@ -126,6 +126,10 @@ body {
   z-index: 11;
 }
 
+.slick-slider .slick-track {
+  margin-left: 0;
+}
+
 .slick-dots li {
   margin: 0;
 }
@@ -141,6 +145,42 @@ body {
 }
 
 /*  */
+.menu-item::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-20%);
+  height: 20px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.menu-item:hover .sub-menu {
+  display: unset;
+}
+
+.sub-menu {
+  top: calc(100% + 10px);
+  max-height: 66vh;
+  animation: subMenuAnimation 0.3s linear;
+}
+
+.sub-menu:last-child {
+  left: -20px;
+}
+
+@keyframes subMenuAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .see-more-modal {
   z-index: 11 !important;
 }
@@ -234,5 +274,14 @@ body {
 }
 
 .book-item-wrapper:hover .book-item-modal {
+  display: flex;
+}
+
+.podcast-item-hover {
+  display: none;
+  backdrop-filter: blur(20px);
+}
+
+.podcast-item-wrapper:hover .podcast-item-hover {
   display: flex;
 }
