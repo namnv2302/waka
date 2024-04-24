@@ -9,7 +9,7 @@ interface PodcastItemProps {
 
 const PodcastItem: React.FC<PodcastItemProps> = ({ item, index }) => {
   return (
-    <div className="w-[90%]">
+    <div className="w-[84%]">
       <Link href={"#"} className="flex flex-col gap-4">
         <div className="relative w-full podcast-item-wrapper">
           <div className="rounded-xl  overflow-hidden">
@@ -27,7 +27,7 @@ const PodcastItem: React.FC<PodcastItemProps> = ({ item, index }) => {
           </div>
 
           <div className="podcast-item-hover absolute bottom-0 left-0 flex p-4 gap-6 rounded-xl border border-white-overlay bg-dark-overlay min-w-[732px] h-full shadow-glass-box z-20">
-            <div className="rounded-xl w-[208px] h-full overflow-hidden">
+            <div className="rounded-xl w-[191px] h-full overflow-hidden">
               <Image
                 src={item.image}
                 alt=""

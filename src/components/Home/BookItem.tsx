@@ -11,7 +11,7 @@ interface BookItemProps {
 
 const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
   return (
-    <div className="flex flex-col gap-3 cursor-pointer w-[82%]">
+    <div className="flex flex-col gap-3 cursor-pointer w-[84%]">
       <div className="relative w-full rounded-[12px] book-item-wrapper">
         <Image
           src={item.image}

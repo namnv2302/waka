@@ -5,6 +5,7 @@ import Newest from "@/components/Home/Newest";
 import Podcast from "@/components/Home/Podcast";
 import Ranking from "@/components/Home/Ranking";
 import Reading from "@/components/Home/Reading";
+import ComboBook from "@/components/Home/ComboBook";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Ranking />
       <Podcast />
       <BuyBook />
+      <ComboBook />
     </div>
   );
 };
