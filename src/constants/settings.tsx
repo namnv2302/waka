@@ -1,10 +1,15 @@
 import Image from "next/image";
 import images from "@/assets/images";
 
-export const ArrowPrev = ({ currentSlide, slideCount, onClick }: any) => {
+export const ArrowPrev = ({
+  currentSlide,
+  slideCount,
+  slideNumber = 5,
+  onClick,
+}: any) => {
   return (
     <>
-      {currentSlide && currentSlide > 0 && slideCount > 5 ? (
+      {currentSlide && currentSlide > 0 && slideCount > slideNumber ? (
         <div
           className="book-item-arrow-left items-center justify-center cursor-pointer z-10 w-[48px] h-[48px] rounded-full bg-[hsla(0,0%,100%,.1)] border border-[hsla(0,0%,100%,.1)]"
           onClick={onClick}
@@ -22,10 +27,17 @@ export const ArrowPrev = ({ currentSlide, slideCount, onClick }: any) => {
   );
 };
 
-export const ArrowNext = ({ currentSlide, slideCount, onClick }: any) => {
+export const ArrowNext = ({
+  currentSlide,
+  slideCount,
+  slideNumber = 5,
+  onClick,
+}: any) => {
   return (
     <>
-      {slideCount && currentSlide < slideCount - 5 && slideCount > 5 ? (
+      {slideCount &&
+      currentSlide < slideCount - (slideNumber + 0.5) &&
+      slideCount > slideNumber ? (
         <div
           className="book-item-arrow-right items-center justify-center cursor-pointer z-10 w-[48px] h-[48px] rounded-full bg-[hsla(0,0%,100%,.1)] border border-[hsla(0,0%,100%,.1)]"
           onClick={onClick}
