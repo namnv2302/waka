@@ -40,6 +40,12 @@ body {
   background-color: rgba(18, 18, 20, 0.8);
 }
 
+.user-select {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fb3a1a;
+}
+
 .tag-free,
 .tag-member {
   border-radius: 0 12px;
