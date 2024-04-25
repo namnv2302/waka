@@ -11,7 +11,7 @@ interface BookItemProps {
 
 const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
   return (
-    <div className="flex flex-col gap-3 cursor-pointer xl:w-56 lg:w-52">
+    <div className="flex flex-col gap-3 cursor-pointer xl:w-56 lg:w-52 mr-2 lg:mr-0">
       <div className="relative w-full rounded-[12px] book-item-wrapper">
         <Image
           src={item.image}
@@ -75,21 +75,21 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
         </div>
         <div
           className={twMerge(
-            `hidden absolute top-0 right-0 h-7 w-[120px] py-1 pl-3`,
+            `hidden absolute top-0 right-0 h-4 lg:h-7 w-[70px] lg:w-[120px] py-1 pl-3 pr-3 lg:pr-0`,
             tag && "inline-block",
             tag
           )}
         >
-          <p className="text-[16px] font-medium leading-5 text-white uppercase">
+          <p className="text-[8px] lg:text-[16px] font-medium leading-[10px] lg:leading-5 text-white uppercase">
             Hội viên
           </p>
           <Image
             src={images.TagMemberImage}
             alt=""
-            className="absolute top-0 right-0"
+            className="absolute top-0 right-0 w-4 h-4 lg:h-auto lg:w-auto"
           />
         </div>
-        <div className="label-rank absolute -bottom-4 left-0 overflow-hidden">
+        <div className="label-rank absolute -bottom-1 lg:-bottom-4 left-0 overflow-hidden">
           {item.rank}
         </div>
         <div
@@ -99,7 +99,7 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
           )}
         ></div>
       </div>
-      <p className="font-medium text-[16px] text-white-50 leading-[20px] hover:text-primary transition">
+      <p className="font-normal text-[14px] text-white-50 leading-[18px] hover:text-primary transition line-clamp-2">
         <Link href="#" className="block">
           {item.title}
         </Link>

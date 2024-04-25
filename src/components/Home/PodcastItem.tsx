@@ -9,7 +9,7 @@ interface PodcastItemProps {
 
 const PodcastItem: React.FC<PodcastItemProps> = ({ item, index }) => {
   return (
-    <div className="xl:w-56 lg:w-52">
+    <div className="xl:w-56 lg:w-52 mr-2 lg:mr-0">
       <Link href={"#"} className="flex flex-col gap-4">
         <div className="relative w-full podcast-item-wrapper">
           <div className="rounded-xl  overflow-hidden">

@@ -9,14 +9,14 @@ import GooglePlayIcon from "@/assets/images/googlePlayIcon.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-background pt-20 pb-10 px-[60px]">
+    <footer className="bg-background lg:pt-20 lg:pb-10 xl:px-[60px] lg:px-8 px-4 pt-10 pb-10">
       <div className="grid grid-cols-7">
-        <div className="col-span-2">
+        <div className="lg:col-span-2 col-span-7">
           <Image src={LogoImage} alt="" width={180} />
           <p className="font-normal text-[#999] text-[16px] leading-5 pt-4 pb-5">
             Công ty cổ phần sách điện tử Waka
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-between lg:justify-normal gap-6">
             <p className="flex items-center gap-2">
               <Image src={PhoneIcon} alt="" width={24} height={24} />
               <span className="font-normal text-[#999] text-[16px] leading-5">
@@ -31,7 +31,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="lg:col-span-2 lg:block hidden">
           <h3 className="font-medium text-[16px] leading-6 text-second tracking-[0.5] mb-4">
             Về chúng tôi
           </h3>
@@ -72,7 +72,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-1">
+        <div className="lg:col-span-1 lg:block hidden">
           <h3 className="font-medium text-[16px] leading-6 text-second tracking-[0.5] mb-4">
             Thông tin hữu ích
           </h3>
@@ -99,7 +99,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-span-1">
+        <div className="lg:col-span-1 lg:block hidden">
           <h3 className="font-medium text-[16px] leading-6 text-second tracking-[0.5] mb-4">
             Tin tức
           </h3>
@@ -121,7 +121,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-span-1">
+        <div className="lg:col-span-1 lg:block hidden">
           <div className="flex gap-5">
             <div>
               <Image src={QrIcon} alt="" />
@@ -137,7 +137,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="font-normal text-[#999] text-[13px] mt-[60px]">
+      <p className="font-normal text-[#999] text-[13px] mt-6 lg:mt-[60px]">
         Công ty Cổ phần Sách điện tử Waka - Tầng 6, tháp văn phòng quốc tế Hòa
         Bình, số 106, đường Hoàng Quốc Việt, phường Nghĩa Đô, Quận Cầu Giấy,
         thành phố Hà Nội, Việt Nam. <br /> ĐKKD số 0108796796 do SKHĐT TP Hà Nội

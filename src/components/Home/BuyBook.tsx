@@ -11,10 +11,10 @@ import BookItem from "@/components/Home/BookItem";
 const BuyBook = () => {
   return (
     <div className="bg-background container-block">
-      <h2 className="font-medium text-[26px] leading-[33px] text-white-50">
+      <h2 className="font-medium text-[18px] lg:text-[26px] leading-[33px] text-white lg:text-white-50">
         Mua sách lẻ
       </h2>
-      <div className="flex flex-wrap items-center gap-6 my-5">
+      <div className="flex flex-wrap items-center gap-6 my-2 lg:my-5">
         <div className="flex items-center">
           <Image
             src={TagFlash}

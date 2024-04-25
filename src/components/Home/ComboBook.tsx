@@ -9,10 +9,10 @@ import ComboBookItem from "@/components/Home/ComboBookItem";
 const ComboBook = () => {
   return (
     <div className="bg-background container-block">
-      <h2 className="font-medium text-[26px] leading-[33px] text-white-50">
+      <h2 className="font-medium text-[18px] lg:text-[26px] leading-[33px] text-white-50">
         Combo sách
       </h2>
-      <div className="mt-5">
+      <div className="mt-2 lg:mt-5">
         <Slider {...settings} className="book-wrapper">
           {comboBook.map((item) => (
             <ComboBookItem key={uuIdV4()} item={item} />

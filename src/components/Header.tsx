@@ -6,6 +6,7 @@ import Link from "next/link";
 import images from "@/assets/images";
 import subMenus from "@/assets/images/subMenu";
 import { navigation, subMenu } from "@/constants/navigation";
+import MenuIcon from "@/assets/images/menuIcon.svg";
 
 const Header = () => {
   const handleScroll = () => {
@@ -36,14 +37,19 @@ const Header = () => {
 
   return (
     <header className="header bg-gradient-overlay py-[11px] fixed z-10 top-0 left-0 bg-[rgba(18,18,20,.8)] w-full">
-      <div className="w-full px-[60px]">
-        <div className="flex justify-between w-full">
-          <div className="flex gap-[48px]">
+      <div className="w-full xl:px-12 lg:px-8 px-4">
+        <div className="flex justify-between gap-8">
+          <div className="lg:hidden">
+            <div>
+              <Image src={MenuIcon} alt="" width={26} height={26} />
+            </div>
+          </div>
+          <div className="hidden lg:flex gap-12 flex-1">
             <Link href={"/"} className="py-2.5">
               <Image
                 src={images.LogoImage}
                 alt=""
-                className="h-[32px] w-[108px"
+                className="h-[32px] w-[108px]"
               />
             </Link>
             <ul className="flex items-center flex-wrap gap-x-[24px]">
@@ -252,9 +258,9 @@ const Header = () => {
             <Image
               src={images.BellImage}
               alt=""
-              className="h-[24px] w-[24px] cursor-pointer"
+              className="hidden lg:block h-[24px] w-[24px] cursor-pointer"
             />
-            <div className="flex items-center gap-[8px] cursor-pointer">
+            <div className="hidden lg:flex items-center gap-[8px] cursor-pointer">
               <div className="flex items-center justify-center w-[42px] h-[42px] min-w-[42px] bg-gradient-to-r from-[#FB3A1A] to-[#EBB004] rounded-full">
                 <div className="flex items-center justify-center h-full w-full rounded-full">
                   <Image

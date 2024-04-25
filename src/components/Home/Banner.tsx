@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Slider from "react-slick";
 import images from "@/assets/images";
-import { banner } from "@/constants/banner";
+import { banner, bannerMobile } from "@/constants/banner";
 
 const ArrowPrev = ({ currentSlide, slideCount, onClick }: any) => {
   return (
@@ -32,7 +32,7 @@ const ArrowNext = ({ currentSlide, slideCount, onClick }: any) => {
 };
 
 function Banner() {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -42,9 +42,20 @@ function Banner() {
     nextArrow: <ArrowNext />,
   };
 
+  const settings2 = {
+    className: "center",
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    // autoplay: true,
+  };
+
   return (
     <div className="relative">
-      <Slider {...settings} className="slider-wrapper">
+      <Slider {...settings} className="hidden lg:block slider-wrapper">
         {banner.map((item, index) => (
           <Image
             key={index}
@@ -54,7 +65,19 @@ function Banner() {
           />
         ))}
       </Slider>
-      <div className="h-[120px] absolute bottom-0 left-0 w-full z-9 slider-bottom-overlay"></div>
+      <div className="hidden lg:block h-[120px] absolute bottom-0 left-0 w-full z-9 slider-bottom-overlay"></div>
+      <div className="slider-container">
+        <Slider {...settings2} className="lg:hidden mt-20">
+          {bannerMobile.map((item, index) => (
+            <Image
+              key={index}
+              src={item.image}
+              alt=""
+              className="w-full rounded-xl"
+            />
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

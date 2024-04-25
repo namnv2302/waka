@@ -13,10 +13,10 @@ const PodcastItem = dynamic(() => import("@/components/Home/PodcastItem"), {
 const Podcast = () => {
   return (
     <div className="bg-background container-block">
-      <h2 className="font-medium text-[26px] leading-[33px] text-white-50">
+      <h2 className="font-medium text-[18px] lg:text-[26px] leading-[33px] text-white lg:text-white-50">
         Podcast đặc sắc
       </h2>
-      <div className="mt-5">
+      <div className="mt-2 lg:mt-5">
         <Slider {...settings} className="book-wrapper">
           {podcast.map((item, index) => (
             <PodcastItem key={uuIdV4()} item={item} index={index} />

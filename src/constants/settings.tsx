@@ -64,4 +64,24 @@ export const settings = {
   slidesToScroll: 5,
   prevArrow: <ArrowPrev />,
   nextArrow: <ArrowNext />,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: false,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        infinite: false,
+        dots: false,
+      },
+    },
+  ],
 };

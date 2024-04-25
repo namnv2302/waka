@@ -17,11 +17,25 @@ const LatestNews = () => {
         slidesToScroll={3}
         nextArrow={<ArrowNext slideNumber={3} />}
         prevArrow={<ArrowPrev slideNumber={3} />}
+        responsive={[
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 2.5,
+              slidesToScroll: 2,
+              infinite: false,
+              dots: false,
+            },
+          },
+        ]}
         className="book-wrapper"
       >
         {latestNews.map((item) => (
           <div key={uuIdV4()}>
-            <Link href={"/"} className="flex flex-col gap-4 w-[390px]">
+            <Link
+              href={"/"}
+              className="flex flex-col lg:gap-4 gap-2 w-auto mr-2 lg:w-auto lg:mr-10"
+            >
               <div className="w-full rounded-xl overflow-hidden zoom-out">
                 <Image
                   src={item.image}
@@ -29,7 +43,7 @@ const LatestNews = () => {
                   className="object-cover w-full"
                 />
               </div>
-              <p className="font-medium text-[16px] text-second line-clamp-2 hover:text-primary">
+              <p className="font-medium text-[14px] lg:text-[16px] text-second line-clamp-2 hover:text-primary">
                 {item.title}
               </p>
             </Link>
