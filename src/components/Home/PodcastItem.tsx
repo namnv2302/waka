@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import images from "@/assets/images";
@@ -65,7 +67,7 @@ const PodcastItem: React.FC<PodcastItemProps> = ({ item, index }) => {
                 bala bala bala bala
               </p>
               <p className="font-normal text-[15px] text-primary leading-5">
-                <Link href="#">Chi tiết</Link>
+                <span>Chi tiết</span>
               </p>
             </div>
           </div>

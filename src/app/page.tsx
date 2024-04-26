@@ -12,18 +12,21 @@ import LatestNews from "@/components/Home/LatestNews";
 
 const Home = () => {
   return (
-    <div className="relative bg-background">
+    <div className="relative ">
       <Banner />
-      <Reading />
-      <Newest />
-      <ForYou />
-      <Ranking />
-      <Podcast />
-      <BuyBook />
-      <ComboBook />
-      <Author />
-      <SelectedCollection />
-      <LatestNews />
+      <div className="bg-background relative">
+        <div className="absolute left-0 right-0 bottom-[100%] bg-background h-[33px] lg:h-[61px]"></div>
+        <Reading />
+        <Newest />
+        <ForYou />
+        <Ranking />
+        <Podcast />
+        <BuyBook />
+        <ComboBook />
+        <Author />
+        <SelectedCollection />
+        <LatestNews />
+      </div>
     </div>
   );
 };

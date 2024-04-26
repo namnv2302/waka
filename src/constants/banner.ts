@@ -32,4 +32,7 @@ export const bannerMobile = [
   {
     image: require("@/assets/images/banner-mobile/5.png"),
   },
+  {
+    image: require("@/assets/images/banner-mobile/6.png"),
+  },
 ];

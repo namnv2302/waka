@@ -48,6 +48,21 @@ body {
   background-color: rgba(18, 18, 20, 0.8);
 }
 
+.menu-mobile-content {
+  animation: transform 0.5s, opacity 0.5s;
+}
+
+@keyframes menuMobileDisplay {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .user-select {
   border-width: 2px;
   border-style: solid;
@@ -339,9 +354,11 @@ body {
   transform: translate(-50%, -100%);
 }
 
-.book-wrapper:hover .book-item-arrow-left,
-.book-wrapper:hover .book-item-arrow-right {
-  display: flex;
+@media only screen and (min-width: 1024px) {
+  .book-wrapper:hover .book-item-arrow-left,
+  .book-wrapper:hover .book-item-arrow-right {
+    display: flex;
+  }
 }
 
 .book-item-arrow-left:hover,
@@ -358,8 +375,10 @@ body {
   animation: bookItemModalAnimation 0.3s linear;
 }
 
-.book-item-wrapper:hover .book-item-modal {
-  display: flex;
+@media only screen and (min-width: 1024px) {
+  .book-item-wrapper:hover .book-item-modal {
+    display: flex;
+  }
 }
 
 @keyframes bookItemModalAnimation {

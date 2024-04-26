@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import LogoImage from "@/assets/images/logo.svg";
@@ -16,16 +18,16 @@ const Footer = () => {
           <p className="lg:font-normal font-normal text-[#999] text-[14px] lg:text-[16px] leading-4 lg:leading-5 pt-4 pb-5">
             Công ty cổ phần sách điện tử Waka
           </p>
-          <div className="flex items-center justify-between lg:justify-normal gap-6">
-            <p className="flex items-center gap-2">
+          <div className="flex items-center flex-wrap justify-between lg:justify-normal gap-2 sm:gap-6">
+            <p className="flex flex-wrap items-center gap-2">
               <Image src={PhoneIcon} alt="" width={24} height={24} />
-              <span className="font-normal text-[#999] text-[14px] lg:text-[16px] leading-4 lg:leading-5">
+              <span className="font-normal text-[#999] text-[12px] sm:text-[14px] lg:text-[16px] leading-4 lg:leading-5">
                 0877736289
               </span>
             </p>
-            <p className="flex items-center gap-2">
+            <p className="flex flex-wrap items-center gap-2">
               <Image src={MailIcon} alt="" width={24} height={24} />
-              <span className="font-normal text-[#999] text-[14px] lg:text-[16px] leading-4 lg:leading-5">
+              <span className="font-normal text-[#999] text-[12px] sm:text-[14px] lg:text-[16px] leading-4 lg:leading-5">
                 Support@waka.vn
               </span>
             </p>

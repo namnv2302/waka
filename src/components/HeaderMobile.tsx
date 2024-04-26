@@ -37,6 +37,13 @@ const HeaderMobile = () => {
     return () => document.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMenuMobile = () => {
+    const menuMobile = document.querySelector(".menu-mobile");
+    if (menuMobile) {
+      menuMobile.classList.toggle("hidden");
+    }
+  };
+
   return (
     <header
       ref={headerMobileRef}
@@ -44,7 +51,7 @@ const HeaderMobile = () => {
     >
       <div className="py-3">
         <div className="flex items-center justify-between gap-8 px-4">
-          <div>
+          <div onClick={toggleMenuMobile}>
             <Image src={MenuIcon} alt="" width={26} height={26} />
           </div>
           <div className="flex items-center h-fit xl:h-auto gap-4 lg:gap-[24px]">

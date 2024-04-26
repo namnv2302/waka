@@ -66,6 +66,15 @@ export const settings = {
   nextArrow: <ArrowNext />,
   responsive: [
     {
+      breakpoint: 1281,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: false,
+        dots: false,
+      },
+    },
+    {
       breakpoint: 1025,
       settings: {
         slidesToShow: 4,

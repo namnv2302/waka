@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
@@ -20,7 +22,7 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
         />
         <div className="book-item-overlay"></div>
         <div
-          className={`book-item-modal absolute top-0 ${
+          className={`lg:hidden book-item-modal absolute top-0 ${
             index !== 0 && index > 3 ? "right-0" : "left-0"
           } bottom-0 flex min-w-[732px] p-4 rounded-[12px] gap-6 border border-white-overlay z-20`}
         >

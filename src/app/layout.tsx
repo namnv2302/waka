@@ -6,6 +6,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeaderMobile from "@/components/HeaderMobile";
+import MenuMobile from "@/components/MenuMobile";
 
 const netflixSans = localFont({
   src: [
@@ -43,6 +44,7 @@ export default function RootLayout({
         <>
           <HeaderMobile />
           <Header />
+          <MenuMobile />
           {children}
           <Footer />
         </>

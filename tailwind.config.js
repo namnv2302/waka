@@ -27,8 +27,10 @@ module.exports = {
       primary: "#15B088",
       "progress-overlay": "rgba(18, 18, 20, 0.6)",
       "black-085": "rgba(0,0,0,.85)",
-      "gradient-slider": "linear-gradient(180deg,rgba(18,18,20,0),#121214)",
       "black-055": "rgba(0,0,0,.55)",
+    },
+    backgroundImage: {
+      "gradient-slider": "linear-gradient(180deg,rgba(18,18,20,0),#121214)",
     },
     boxShadow: {
       "glass-box": "0px 8px 32px 0px hsla(0, 0%, 0%, 0.5)",
