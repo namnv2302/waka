@@ -16,7 +16,7 @@ const Author = () => {
           <div key={uuIdV4()}>
             <Link
               href={"/"}
-              className="inline-flex flex-col gap-4 xl:w-56 lg:w-52"
+              className="inline-flex flex-col w-full gap-4 xl:w-56 lg:w-52"
             >
               <div className="w-full xl:h-56 lg:h-52 rounded-full overflow-hidden zoom-out">
                 <Image
@@ -25,7 +25,7 @@ const Author = () => {
                   className="block w-full h-full object-cover"
                 />
               </div>
-              <p className="font-medium text-[16px] text-white-50 text-center hover:text-primary">
+              <p className="lg:font-medium font-normal text-[14px] lg:text-[16px] text-white-50 text-center hover:text-primary">
                 {item.title}
               </p>
             </Link>

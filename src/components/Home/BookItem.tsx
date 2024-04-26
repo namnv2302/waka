@@ -99,7 +99,7 @@ const BookItem: React.FC<BookItemProps> = ({ item, index, tag }) => {
           )}
         ></div>
       </div>
-      <p className="font-normal text-[14px] text-white-50 leading-[18px] hover:text-primary transition line-clamp-2">
+      <p className="font-normal lg:font-medium text-[14px] lg:text-[16px] text-white-50 leading-[18px] hover:text-primary transition line-clamp-1 lg:line-clamp-2">
         <Link href="#" className="block">
           {item.title}
         </Link>

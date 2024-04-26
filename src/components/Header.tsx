@@ -36,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header bg-gradient-overlay py-[11px] fixed z-10 top-0 left-0 bg-[rgba(18,18,20,.8)] w-full">
+    <header className="hidden lg:block header bg-gradient-overlay py-[11px] fixed z-10 top-0 left-0 bg-[rgba(18,18,20,.8)] w-full">
       <div className="w-full xl:px-12 lg:px-8 px-4">
         <div className="flex justify-between gap-8">
           <div className="lg:hidden">

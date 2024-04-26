@@ -21,8 +21,8 @@ const LatestNews = () => {
           {
             breakpoint: 1025,
             settings: {
-              slidesToShow: 2.5,
-              slidesToScroll: 2,
+              slidesToShow: 1.5,
+              slidesToScroll: 1,
               infinite: false,
               dots: false,
             },

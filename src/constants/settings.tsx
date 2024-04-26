@@ -77,8 +77,26 @@ export const settings = {
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 6,
-        slidesToScroll: 6,
+        slidesToShow: 5.5,
+        slidesToScroll: 5,
+        infinite: false,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 3.5,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 426,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 2,
         infinite: false,
         dots: false,
       },

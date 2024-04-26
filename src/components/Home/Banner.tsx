@@ -44,13 +44,14 @@ function Banner() {
 
   const settings2 = {
     className: "center",
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     centerMode: true,
-    // autoplay: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 1,
+    speed: 500,
+    autoplay: true,
+    nextArrow: <></>,
+    prevArrow: <></>,
   };
 
   return (
@@ -66,17 +67,26 @@ function Banner() {
         ))}
       </Slider>
       <div className="hidden lg:block h-[120px] absolute bottom-0 left-0 w-full z-9 slider-bottom-overlay"></div>
-      <div className="slider-container">
-        <Slider {...settings2} className="lg:hidden mt-20">
-          {bannerMobile.map((item, index) => (
-            <Image
-              key={index}
-              src={item.image}
-              alt=""
-              className="w-full rounded-xl"
-            />
-          ))}
-        </Slider>
+      <div className="relative">
+        <div className="absolute lg:hidden w-full top-[-102px] left-0 right-0 h-[320px] sm:h-[640px]">
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black-055"></div>
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-slider"></div>
+        </div>
+        <div className="slider-container">
+          <Slider {...settings2} className="lg:hidden mt-[104px]">
+            {bannerMobile.map((item, index) => (
+              <div key={index} className="rounded-xl overflow-hidden">
+                <div className="mr-4 md:h-[688px] sm:h-[522px] h-[255px] banner-mobile-item">
+                  <Image
+                    src={item.image}
+                    alt=""
+                    className="w-full h-full rounded-xl object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

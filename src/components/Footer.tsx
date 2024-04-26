@@ -12,20 +12,20 @@ const Footer = () => {
     <footer className="bg-background lg:pt-20 lg:pb-10 xl:px-[60px] lg:px-8 px-4 pt-10 pb-10">
       <div className="grid grid-cols-7">
         <div className="lg:col-span-2 col-span-7">
-          <Image src={LogoImage} alt="" width={180} />
-          <p className="font-normal text-[#999] text-[16px] leading-5 pt-4 pb-5">
+          <Image src={LogoImage} alt="" className="lg:w-[180px] w-[135px]" />
+          <p className="lg:font-normal font-normal text-[#999] text-[14px] lg:text-[16px] leading-4 lg:leading-5 pt-4 pb-5">
             Công ty cổ phần sách điện tử Waka
           </p>
           <div className="flex items-center justify-between lg:justify-normal gap-6">
             <p className="flex items-center gap-2">
               <Image src={PhoneIcon} alt="" width={24} height={24} />
-              <span className="font-normal text-[#999] text-[16px] leading-5">
+              <span className="font-normal text-[#999] text-[14px] lg:text-[16px] leading-4 lg:leading-5">
                 0877736289
               </span>
             </p>
             <p className="flex items-center gap-2">
               <Image src={MailIcon} alt="" width={24} height={24} />
-              <span className="font-normal text-[#999] text-[16px] leading-5">
+              <span className="font-normal text-[#999] text-[14px] lg:text-[16px] leading-4 lg:leading-5">
                 Support@waka.vn
               </span>
             </p>
@@ -137,7 +137,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="font-normal text-[#999] text-[13px] mt-6 lg:mt-[60px]">
+      <p className="font-normal text-[#999] text-[11px] lg:text-[13px] mt-6 lg:mt-[60px]">
         Công ty Cổ phần Sách điện tử Waka - Tầng 6, tháp văn phòng quốc tế Hòa
         Bình, số 106, đường Hoàng Quốc Việt, phường Nghĩa Đô, Quận Cầu Giấy,
         thành phố Hà Nội, Việt Nam. <br /> ĐKKD số 0108796796 do SKHĐT TP Hà Nội

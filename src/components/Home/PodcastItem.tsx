@@ -12,14 +12,14 @@ const PodcastItem: React.FC<PodcastItemProps> = ({ item, index }) => {
     <div className="xl:w-56 lg:w-52 mr-2 lg:mr-0">
       <Link href={"#"} className="flex flex-col gap-4">
         <div className="relative w-full podcast-item-wrapper">
-          <div className="rounded-xl  overflow-hidden">
+          <div className="lg:rounded-xl rounded-[6px]  overflow-hidden">
             <Image
               src={item.image}
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute top-0 left-0 flex items-center bg-progress-overlay py-1 px-3 gap-1 rounded-tl-xl rounded-br-xl">
+          <div className="absolute hidden lg:flex top-0 left-0 items-center bg-progress-overlay py-1 px-3 gap-1 rounded-tl-xl rounded-br-xl">
             <Image src={images.MusicImage} alt="" className="w-4 h-4" />
             <p className="font-normal text-[13px] leading-5 text-white">
               38,7K
@@ -70,7 +70,7 @@ const PodcastItem: React.FC<PodcastItemProps> = ({ item, index }) => {
             </div>
           </div>
         </div>
-        <p className="font-medium text-[16px] leading-5 text-second hover:text-primary transition">
+        <p className="lg:font-medium font-normal text-[14px] lg:text-[16px] leading-5 text-second line-clamp-1 lg:line-clamp-2 hover:text-primary transition">
           {item.title}
         </p>
       </Link>

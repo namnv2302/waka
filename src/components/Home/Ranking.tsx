@@ -15,7 +15,7 @@ const Ranking = () => {
       <h2 className="font-medium text-[18px] lg:text-[26px] leading-[33px] text-white lg:text-white-50">
         Bảng xếp hạng
       </h2>
-      <div className="flex flex-wrap items-center gap-6 lg:my-5 my-3">
+      <div className="flex lg:flex-wrap overflow-x-scroll whitespace-nowrap no-scrollbar pr-4 lg:pr-0 items-center gap-6 lg:my-5 my-3">
         <p
           className={twMerge(
             `font-light text-[15px] leading-6 text-black/600 tracking-[0.5] hover:text-[#999] cursor-pointer`,

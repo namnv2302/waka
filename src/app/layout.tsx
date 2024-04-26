@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import HeaderMobile from "@/components/HeaderMobile";
 
 const netflixSans = localFont({
   src: [
@@ -40,6 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={netflixSans.className}>
         <>
+          <HeaderMobile />
           <Header />
           {children}
           <Footer />
