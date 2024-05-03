@@ -398,3 +398,31 @@ body {
 .podcast-item-wrapper:hover .podcast-item-hover {
   display: flex;
 }
+
+/* Ebook detail */
+.ebook-container {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.blur-layer-1,
+.blur-layer-2 {
+  width: min(771px, 50%);
+  flex-shrink: 0;
+  filter: blur(170px);
+}
+
+.blur-layer-1 {
+  height: 504px;
+  border-radius: 771px;
+  opacity: 0.5;
+  background: linear-gradient(180deg, #16b68e -16.8%, #0b5b47 117.58%);
+}
+
+.blur-layer-2 {
+  height: 847px;
+  border-radius: 847px;
+  opacity: 0.2;
+  background-color: #fff;
+}
