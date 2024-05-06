@@ -3,12 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import MenuIcon from "@/assets/images/menuIcon.svg";
 import images from "@/assets/images";
 
 const HeaderMobile = () => {
   const navBarRef = useRef<any>();
   const headerMobileRef = useRef<any>();
+  const pathname = usePathname();
 
   useEffect(() => {
     let currentOffset = window.scrollY;
@@ -47,7 +49,9 @@ const HeaderMobile = () => {
   return (
     <header
       ref={headerMobileRef}
-      className="lg:hidden fixed top-0 left-0 right-0 z-10"
+      className={`lg:hidden fixed top-0 left-0 right-0 z-10 ${
+        pathname.includes("/ebook/") ? "hidden" : ""
+      }`}
     >
       <div className="py-3">
         <div className="flex items-center justify-between gap-8 px-4">

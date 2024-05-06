@@ -31,6 +31,7 @@ module.exports = {
       "black-055": "rgba(0,0,0,.55)",
       "pink/950": "rgba(26, 0, 5, 1)",
       "pink/500": "#FF375F",
+      "black-pink": "rgba(26,0,5,.2)",
     },
     backgroundImage: {
       "gradient-slider": "linear-gradient(180deg,rgba(18,18,20,0),#121214)",
